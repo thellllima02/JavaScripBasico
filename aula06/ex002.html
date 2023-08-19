@@ -22,10 +22,13 @@
 
         var n1 = Number.parseFloat(window.prompt("Digite um número"));//Um dos jeitos de converter String para números
         var n2 = Number(window.prompt("Digite mais um numero ")); //Uma das formas automaticas para a conversão de String for number
-
         var s = n1+n2;
-
         window.alert(`O resultado de ${n1} mais ${n2} é igual a ${s}`);
+
+        var n3 = Number.parseFloat(window.prompt("Digite um valor que vai ser convertido em dinheiro"));
+        window.alert(`O Valor ficou ${n3.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}`);//Transformando em cifrão
+
+
      
      </script>
  
