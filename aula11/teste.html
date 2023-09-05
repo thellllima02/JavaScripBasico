@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibição de Nome</title>
+</head>
+<body>
+    <h1>Informe seu nome:</h1>
+    <form id="nomeForm">
+        <input type="text" id="nomeInput" placeholder="Digite seu nome">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Nome digitado:</h2>
+    <p id="nomeExibido"></p>
+
+    <script>
+        // Função para tratar o envio do formulário
+        document.getElementById("nomeForm").addEventListener("submit", function (e) {
+            e.preventDefault(); // Evita o comportamento padrão do formulário
+
+            // Obtém o valor do campo de entrada
+            var nome = document.getElementById("nomeInput").value;
+
+            // Exibe o nome na tela
+            document.getElementById("nomeExibido").textContent = "Nome digitado: " + nome;
+        });
+    </script>
+</body>
+</html>
