@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,15 @@
 </head>
 <body>
     <h1><strong>Nacionalidade</strong></h1>
-    Nacionalidade:<form id="nomeForm">
-        <input type="text" id="nomeInput" placeholder="Digite seu nome">
+    <strong>País de origem:</strong> <form id="nomeForm">
+        <input type="text" id="nomeInput" placeholder="Escreva aqui">
         <input type="submit" value="verificar">
     </form>
 
     
-    <div id="res"> 
+     
+    <h2>Sua Nacionalidade:</h2> 
+     <div id="res">  
 
     </div>
 
@@ -24,14 +26,14 @@
             e.preventDefault();
             var Nome = document.getElementById("nomeInput").value;
             if(Nome == 'Brasil'){
-                document.getElementById("res").textContent= "Nome: "+Nome;
+                document.getElementById("res").textContent= "Você é brasileiro";
             }
             else{
-                
+                document.getElementById("res").textContent= "Você não é brasileiro"
             }
 
-            
         })
+         document.write("Eu escrevi")
     </script>
     </body>
 </html>
