@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background:yellow;
+            color:black;
+            width: 200px; /*largura */
+            height: 200px; /*altura */
+            line-height: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()" >
+        <p>Click aqui !!</p>
+    </div>
+    <script>
+        var a = document.querySelector('div#area');
+        function clicar(){
+            a.innerText = 'Clickou';
+            a.style.background = 'red';
+        }
+        function entrou(){
+            a.innerText = 'Entrou';
+            a.style.background = 'green';
+        }
+        function saiu(){
+            a.innerText = 'Saiu';
+            a.style.background = 'aquamarine'
+        }
+    </script>
+    
+</body>
+</html>

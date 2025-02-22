@@ -9,35 +9,43 @@
             font: normal 20pt Arial;
             background: aquamarine; 
             color: black;
-            width: 200px;
-            height: 200px;
-            line-height: 200px;
-            text-align: center;
+            width: 200px; /*largura*/
+            height: 200px; /*altura*/
+            line-height: 200px; /*altura da linha*/
+            text-align: center; /*alinhamento horizontal*/
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div id="area" >
+    <!--<div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="sair()">
         Interajaaa....
-    </div>
+    </div> Em vez de chamar os eventos dentro do HTML, podemos fazer isso chamando dentro do javaScript -->
+        <div id="area"> 
+            <p>Interajaaa</p>
+        </div>
+        <!--Assim vez disso, o html fica mais limpo e melhor a visualização da estrutura-->
+    
 
     <script>
-        var a = window.document.getElementById('area');
-        a.addEventListener('click', clicar);
-        a.addEventListener('mouseenter', entrar);
-        a.addEventListener('mouseout', sair);    
+        var a = document.querySelector('div#area');
+        a.addEventListener('click', clicar); //Ele fica ouvindo o que acontece
+        a.addEventListener('mouseenter', entrou);
+        addEventListener('mouseout', sair);
 
         function clicar(){
-            a.innerText = 'Clicou!!';
-            a.style.background = 'red';
+            a.innerText = 'Clicou ! ';
+            a.style.background = 'red'
         }
-        function entrar(){
-            a.innerText="Entrou!!";
+        function entrou(){
+            a.innerText = 'Entrou !'
+            a.style.background = 'green'
         }
         function sair(){
-            a.innerText="Saiuu!!";
-            a.style.background= 'aquamarine'
+            a.innerText = 'Saiu !'
+            a.style.background = 'yellow'
         }
+
     </script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+h1{
+    background: yellowgreen;
+    width: 32%;
+    height: 60%;
+    line-height: 100%;
+    text-align: center;
+}
+
+input[type=button]{
+    background: rgb(231, 165, 165);
+    width: 20%;
+    height: 35px;
+    color: black;
+    border-radius: 13px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: larger;
+    margin: 20px;
+}
+input[type=number]{
+    border-radius: 13px;
+    padding: 12px;
+    width: 250px;
+    height: 17px;
+    margin: 5px;
+}
+div{
+    color: rgb(212, 71, 15);
+    font-weight: bold;
+    font-size: larger;
+    border: 2px solid black;
+    border-radius: 13px;
+    padding: 10px;
+}
+body{
+    display:grid ;
+    background: rgb(168, 186, 233);
+    margin: 70px;
+    place-items: center;
+}
+footer{
+    padding: 20px;
+}

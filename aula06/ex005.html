@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(243, 212, 174);
+            color: rgb(0, 0, 0);
+        }
+        h1{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sera que conseguimos apreender ??</h1>
+    <p>Vamos ver isso ??</p>
+    <p>Aqui <strong>vai</strong> o resultado </p> 
+    <div id="msg">Clique aqui !</div> 
+    <div class="mss">Clique aqui  classe</div>
+    
+    
+    <script>
+
+        //Formas de selecionar elementos
+        //Algumas das formas para pegar algo do front end
+        var n2 = window.document.getElementsByTagName('p')[1];
+        var d = window.document.getElementById('msg');
+        var q = window.document.querySelector('div#msg');// Quando for ID '#' quando for classe '.'
+        var qq = window.document.querySelector('div.mss');//Aqui o exemplo de uma classe
+
+        /*
+        window.document.write(n2.innerText);  //Vem somente o texto, sem formatação
+        window.document.write(n2.innerHTML)//Vem do mesmo jeito
+        window.document.write(d.innerHTML)
+        */
+
+
+        
+    </script>
+</body>
+</html>
