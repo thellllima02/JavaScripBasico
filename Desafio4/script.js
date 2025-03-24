@@ -22,4 +22,5 @@ function Contar() {
   }
 
   res.innerHTML += `🏁<br> Quantos pulos deu: ${cont}`;
+  
 }
